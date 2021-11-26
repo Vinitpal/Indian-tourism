@@ -1,0 +1,74 @@
+.culture-page {
+  margin-bottom: 2em;
+  font-family: Plus Jakarta Display;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.culture-page h1 {
+  margin: 1em 0 2.5em;
+}
+
+.culture-page .card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 54px;
+}
+
+.culture-page .card-grid .card .card-img {
+  width: 251px;
+  height: 251px;
+}
+
+.culture-page .card-grid .card .card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.culture-page .card-grid .card {
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+
+.culture-page .card-grid .card-overlay {
+  background: rgba(251, 228, 158, 0.44);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+  z-index: 20;
+}
+
+.culture-page .card-grid .card:hover .card-overlay {
+  opacity: 1;
+}
+
+.culture-page .card-grid .card .card-text {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 7px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .culture-page h1 {
+    font-size: 2rem;
+  }
+
+  .culture-page .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 54px;
+  }
+
+  .culture-page .card-grid .card .card-img {
+    width: 221px;
+    height: 221px;
+  }
+}

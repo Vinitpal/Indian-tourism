@@ -1,0 +1,126 @@
+.top-part {
+  background: url("./image.png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8em 3em 6em;
+}
+
+.top-part-title {
+  font-family: "Plus Jakarta Display";
+  width: 50%;
+  padding-left: 2em;
+  color: #fff;
+  text-align: left;
+}
+
+.top-part-title > h1 {
+  font-size: 54px;
+  margin: 10px 0;
+}
+.top-part-title > p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.top-part-title > h1 > span {
+  font-family: "Damion";
+  padding-right: 5px;
+  color: #ff0099;
+  font-weight: 300;
+}
+
+.top-part-title > button {
+  font-family: "Plus Jakarta Display";
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer !important;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fffffe;
+  border: 2px solid #6b6b6b;
+  border-radius: 20px;
+  padding: 15px 50px;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.top-part-title > button:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.top-part .video-area {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.top-part .video-area > .video > .video-play > i {
+  font-size: 28px;
+}
+
+.top-part .video-area > .video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 480px;
+  padding: 10px 4px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 43px;
+}
+
+.top-part .video-area > .video > iframe {
+  border-radius: 20px;
+  width: 90%;
+  height: 460px;
+}
+
+@media only screen and (max-width: 600px) {
+  .top-part {
+    flex-direction: column;
+    height: fit-content;
+    /* margin: 5rem 0; */
+    padding: 10rem 0;
+  }
+
+  .top-part-title {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 8rem;
+    padding-bottom: 2rem;
+  }
+
+  .top-part-title > h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+  }
+
+  .top-part-title > p {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .top-part-title > button {
+    font-size: 1rem;
+    padding: 0.8rem 1.4rem;
+  }
+
+  .top-part .video-area {
+    width: 100%;
+  }
+
+  .top-part .video-area > .video {
+    width: 70%;
+    height: 480px;
+    padding: 10px 6px;
+  }
+
+  .top-part .video-area > .video > iframe {
+    width: 92%;
+    height: 464px;
+  }
+}

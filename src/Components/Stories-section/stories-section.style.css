@@ -1,0 +1,156 @@
+.stories-section {
+  margin: 7em 0;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Plus Jakarta Display;
+}
+
+.stories-section .text h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.stories-section .text p {
+  margin: 0 0 60px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #a5a5a5;
+}
+
+.stories-section .story-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stories-section .story-wrapper .img {
+  height: 425px;
+  width: 40%;
+}
+
+.stories-section .story-wrapper .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.stories-section .story-wrapper .content {
+  width: 40%;
+  text-align: left;
+}
+
+.stories-section .story-wrapper .content h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.stories-section .story-wrapper .content p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #787878;
+}
+
+.stories-section .story-wrapper .user-wrapper {
+  margin-top: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stories-section .story-wrapper .user-wrapper .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.stories-section .story-wrapper .user-wrapper .user img {
+  width: 50px;
+}
+
+.stories-section .story-wrapper .user-wrapper .user .user-name h2 {
+  font-size: 9px;
+  margin: 9px;
+}
+
+.stories-section .story-wrapper .user-wrapper .user .user-name p {
+  margin: 9px;
+  font-size: 9px;
+  line-height: 0;
+}
+
+.stories-section .story-wrapper .user-wrapper button {
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 10px 30px;
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: 700;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.stories-section .story-wrapper .user-wrapper button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.stories-section .story-wrapper .next {
+  margin-top: 2em;
+  text-align: right;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.stories-section .story-wrapper .content .next:hover {
+  color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+  .stories-section .text h1 {
+    font-size: 2rem;
+  }
+
+  .stories-section .text p {
+    font-size: 1.2rem;
+  }
+
+  .stories-section .story-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stories-section .story-wrapper .img {
+    width: 100%;
+    height: 500px;
+    margin: 0 0 1.2rem;
+  }
+
+  .stories-section .story-wrapper .content {
+    width: 96%;
+  }
+
+  .stories-section .story-wrapper .content .user-wrapper {
+    margin-top: 2rem;
+  }
+
+  .stories-section .story-wrapper .user-wrapper .user .user-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8px;
+  }
+
+  .stories-section .story-wrapper .user-wrapper .user .user-name h2 {
+    font-size: 14px;
+    margin: 0px;
+  }
+
+  .stories-section .story-wrapper .user-wrapper .user .user-name p {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+}

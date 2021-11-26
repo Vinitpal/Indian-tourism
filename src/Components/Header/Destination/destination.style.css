@@ -1,0 +1,94 @@
+.destination {
+  position: absolute;
+  top: 5em;
+  left: 20px;
+  width: 95%;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 15px;
+  box-shadow: 0 0 6px rgb(0 0 0 / 50%);
+}
+
+.destination-wrapper {
+  width: 85%;
+  margin: auto;
+  padding: 1rem 6rem;
+  overflow-y: auto;
+  height: 50vh;
+}
+
+.destination ::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+.destination ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.destination ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.destination ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.destination-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+}
+
+.destination-heading {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+}
+
+.destination .card {
+  text-align: center;
+  cursor: pointer;
+}
+
+.destination .card-img {
+  width: 255px;
+  height: 260px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.destination .card-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s all ease-in-out;
+}
+
+.destination .card:hover .card-img img {
+  transform: scale(1.1);
+}
+
+.destination .card-text {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Plus Jakarta Display";
+  color: #fff;
+  background-color: #000;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}

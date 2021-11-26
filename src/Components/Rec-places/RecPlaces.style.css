@@ -1,0 +1,101 @@
+.RecPlaces {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+  font-family: "Plus Jakarta Display";
+}
+
+.RecPlaces .text h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.RecPlaces .text p {
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  color: #a4a4a4;
+}
+
+.RecPlaces .rec-places-list {
+  width: 80%;
+  z-index: 0 !important;
+}
+
+.RecPlaces .card {
+  padding: 40px 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.RecPlaces .card .card-img {
+  width: 210px;
+  height: 280px;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 10px solid transparent;
+  background: rgba(241, 241, 241, 1);
+}
+
+.RecPlaces .card-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.RecPlaces .card-text {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.RecPlaces .btm-design {
+  margin-top: 60px;
+  position: relative;
+}
+
+.RecPlaces .btm-design img {
+  position: absolute;
+  top: 0;
+}
+
+.RecPlaces .btm-design button {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: inherit;
+  padding: 0.7rem 4rem;
+  letter-spacing: 2px;
+  background-color: #fff;
+  border: 2px solid black;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 11px;
+}
+
+.RecPlaces .btm-design button:hover {
+  background-color: #000;
+  border: 2px solid transparent;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .RecPlaces .card .card-img {
+    width: 160px;
+    height: 180px;
+  }
+
+  .RecPlaces .text h1 {
+    font-size: 2rem;
+    margin-bottom: 0px;
+  }
+
+  .RecPlaces .text p {
+    font-size: 1.2rem;
+  }
+}

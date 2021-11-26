@@ -1,0 +1,101 @@
+.header {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 70px;
+  width: 100%;
+  z-index: 20;
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .left-side {
+  margin-left: 2rem;
+  position: relative;
+}
+
+.header .left-side p,
+.header .left-side a {
+  display: inline-block;
+  margin: 1.3rem;
+  font-size: 18px;
+  font-family: "Plus Jakarta Display", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header .left-side i {
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.header .mid-side p {
+  font-size: 36px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Damion", cursive;
+  cursor: pointer;
+}
+
+.header .right-side {
+  display: flex;
+  align-items: center;
+}
+
+.header .right-side .search-box,
+.header .right-side .select-lang {
+  margin: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 21px;
+}
+
+.header .right-side .search-box {
+  padding: 0.6rem 0.5rem;
+}
+
+.header .right-side .search-box input {
+  padding-left: 8px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.header .right-side .search-box input::placeholder {
+  color: #fff;
+}
+
+.header .right-side .search-box i {
+  padding-right: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header .right-side .select-lang {
+  padding: 0.6rem 0.8rem;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.header .right-side .select-lang i {
+  margin: 0 2px;
+}
+
+.header .right-side .lang-list {
+  width: 126px;
+  position: absolute;
+  top: 2.9em;
+  right: -10px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  border-radius: 21px;
+  text-align: center;
+  color: #fff;
+}

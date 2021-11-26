@@ -1,0 +1,101 @@
+.form {
+  background: url("./../../image.png") no-repeat center center/cover;
+  padding: 3rem 0;
+}
+
+.visitor-form {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Plus Jakarta Display";
+}
+
+.visitor-form .text {
+  width: 40%;
+}
+
+.visitor-form .text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  text-align: left;
+}
+
+.visitor-form .form-wrapper {
+  margin-top: 2.4rem;
+  width: 50%;
+  color: #fff;
+}
+
+.visitor-form .form-wrapper form {
+  border: 20px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 43px;
+  display: flex;
+  height: 480px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.visitor-form .form-wrapper .input-container {
+  margin: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.visitor-form .form-wrapper .input-container label {
+  width: 40%;
+}
+
+.visitor-form .form-wrapper .input-container input {
+  margin-right: 2rem;
+  padding-left: 10px;
+  height: 35px;
+  width: 40%;
+  background-color: #262626;
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 8px;
+}
+
+.visitor-form .form-wrapper .input-container input:focus {
+  border: 1px solid blue;
+}
+
+.form-wrapper .submit-btn {
+  margin-top: 3em;
+  text-align: right;
+}
+
+.form-wrapper .submit-btn button {
+  margin-right: 1.2rem;
+  padding: 15px 40px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-family: inherit;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.1);
+  border: 2px solid #6b6b6b;
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.form-wrapper .submit-btn button i {
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+.form-wrapper .submit-btn button:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
