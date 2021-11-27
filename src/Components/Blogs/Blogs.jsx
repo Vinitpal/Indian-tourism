@@ -1,5 +1,6 @@
 import { useState } from "react";
 import BlogCard from "./blogCard/BlogCard";
+import Fade from "./Fade";
 import "./blogs.style.css";
 
 const blogs1 = [
@@ -70,11 +71,7 @@ const blogs2 = [
 ];
 
 const Blogs = () => {
-  const [view, setView] = useState(false);
-
-  const handleViewClick = () => {
-    setView(!view);
-  };
+  const [show, setShow] = useState(false);
 
   return (
     <div className="blogs" id="blog">
@@ -94,8 +91,11 @@ const Blogs = () => {
             userJob={blog.userJob}
           />
         ))}
-        {view &&
-          blogs2.map((blog, id) => (
+      </div>
+
+      <Fade show={show}>
+        <div className="blog-container">
+          {blogs2.map((blog, id) => (
             <BlogCard
               key={id}
               imgSrc={blog.imgSrc}
@@ -106,16 +106,12 @@ const Blogs = () => {
               userJob={blog.userJob}
             />
           ))}
-      </div>
-      <div className="view-more">
-        <h3 onClick={() => handleViewClick()}>
-          {" "}
-          {!view ? "View More" : "Close"}
-        </h3>
-        <i
-          onClick={() => handleViewClick()}
-          className={!view ? "far fa-chevron-down" : "far fa-chevron-up"}
-        ></i>
+        </div>
+      </Fade>
+
+      <div className="view-more" onClick={() => setShow(!show)}>
+        <h3> {!show ? "View More" : "Close"}</h3>
+        <i className={!show ? "far fa-chevron-down" : "far fa-chevron-up"}></i>
       </div>
     </div>
   );

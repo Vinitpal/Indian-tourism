@@ -1,6 +1,7 @@
 .blogs {
   margin-bottom: 4rem;
   font-family: Plus Jakarta Display;
+  transition: all 0.5s ease-in-out;
 }
 
 .blogs .text h1 {
@@ -13,7 +14,7 @@
   font-weight: 500;
   font-size: 24px;
   color: #b3b3b3;
-  margin: 0 0 3rem;
+  margin: 0;
 }
 
 .blogs .blog-container {
@@ -21,7 +22,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
   width: 80%;
-  margin: 0 auto;
+  margin: 3rem auto 0;
   transition: all 0.5s ease-in-out;
 }
 
@@ -88,6 +89,11 @@
   color: #8d8d8d;
 }
 
+.blogs .view-more {
+  width: fit-content;
+  margin: 0 auto;
+}
+
 .blogs .view-more h3 {
   margin: 3rem 0 0;
   cursor: pointer;
@@ -101,6 +107,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
