@@ -8,15 +8,20 @@ const Footer = () => {
         <a href="https://dribbble.com/jay_1308">Jay</a>
         <a href="https://dribbble.com/Doodle1210">Priyansh</a>
       </div>
-      <h1>Made with &#10084; by Team Evolving</h1>
+      <h1>Made with &#10084; by Vinit</h1>
       <div className="links">
-        <a href="https://www.linkedin.com/in/siddharth-sahu-10/">Siddharth</a>
-        <a href="https://www.linkedin.com/in/dhrumilgajjar0723/">Venom</a>
         <a href="https://www.linkedin.com/in/vinitpal-singh-0718a3191/">
-          Kirua
+          <i className="fab fa-linkedin-in"></i>
         </a>
-        <a href="https://www.linkedin.com/in/annu-bharti-6a60bb158/">Annu</a>
-        <a href="https://www.linkedin.com/in/ankitsingho3o/">Ankit</a>
+        <a href="https://twitter.com/vinitpal_arora">
+          <i className="fab fa-twitter"></i>
+        </a>
+        <a href="https://github.com/Vinitpal">
+          <i className="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/vinitpal_arora/">
+          <i className="fab fa-instagram"></i>
+        </a>
       </div>
     </div>
   );

@@ -19,7 +19,7 @@
 }
 
 .visitor-form .text h1 {
-  font-size: 48px;
+  font-size: 46px;
   font-weight: 700;
   color: #fff;
   text-align: left;
@@ -151,5 +151,12 @@
   .form-wrapper .submit-btn {
     margin-top: 3rem;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .visitor-form .text h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
   }
 }

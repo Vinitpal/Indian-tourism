@@ -79,23 +79,22 @@
 
 @media only screen and (max-width: 600px) {
   .top-part {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: fit-content;
-    /* margin: 5rem 0; */
-    padding: 10rem 0;
+    padding: 8rem 0 5rem;
   }
 
   .top-part-title {
-    width: 100%;
+    width: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 8rem;
-    padding-bottom: 2rem;
+    padding-left: 3.5rem;
+    padding-top: 3rem;
   }
 
   .top-part-title > h1 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     margin: 10px 0;
   }
 
@@ -122,5 +121,26 @@
   .top-part .video-area > .video > iframe {
     width: 92%;
     height: 464px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .top-part-title {
+    width: 90%;
+    padding-left: 2rem;
+  }
+
+  .top-part-title > h1 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+
+  .top-part-title > p {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  .top-part .video-area > .video {
+    width: 85%;
   }
 }

@@ -81,7 +81,7 @@ const RecPlaces = () => {
           responsive={responsive}
           infinite={true}
           containerClass="carousel-container"
-          removeArrowOnDeviceType={[]}
+          removeArrowOnDeviceType={["mobile"]}
           itemClass="carousel-item-padding-40-px"
         >
           {places.map((place, id) => (
