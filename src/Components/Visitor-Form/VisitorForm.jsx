@@ -1,29 +1,10 @@
 import React, { useState } from "react";
 
-import Snackbar from "@material-ui/core/Snackbar";
-import MuiAlert from "@material-ui/lab/Alert";
-import { makeStyles } from "@material-ui/core/styles";
-
 import "./Visitor-Form.style.css";
 
-function Alert(props) {
-  return <MuiAlert elevation={6} variant="filled" {...props} />;
-}
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: "100%",
-    "& > * + *": {
-      marginTop: theme.spacing(2),
-    },
-  },
-}));
-
 const Form = () => {
-  const classes = useStyles();
-  const [open, setOpen] = useState(false);
   const [name, setName] = useState("");
-  const [number, setNumber] = useState(+91);
+  const [number, setNumber] = useState("");
   const [email, setEmail] = useState("");
   const [query, setQuery] = useState("");
 
@@ -31,18 +12,11 @@ const Form = () => {
     e.preventDefault();
 
     setName("");
-    setNumber(91);
+    setNumber("");
     setEmail("");
     setQuery("");
-    setOpen(true);
   };
 
-  const handleClose = (event, reason) => {
-    if (reason === "clickaway") {
-      return;
-    }
-    setOpen(false);
-  };
   return (
     <div>
       <form>
@@ -96,13 +70,6 @@ const Form = () => {
           Submit <i className="far fa-chevron-right"></i>
         </button>
       </div>
-      <div className={classes.root}>
-        <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-          <Alert onClose={handleClose} severity="success">
-            Your feedback form is submitted.
-          </Alert>
-        </Snackbar>
-      </div>
     </div>
   );
 };
@@ -112,7 +79,9 @@ const VisitorForm = () => {
     <div className="form">
       <div className="visitor-form">
         <div className="text">
-          <h1>Help us to improve better by filling a feedback form !</h1>
+          <h1>
+            Help us provide you better services by filling a feedback form !
+          </h1>
         </div>
         <div className="form-wrapper">
           <Form />
