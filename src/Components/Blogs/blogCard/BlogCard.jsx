@@ -5,8 +5,8 @@ const BlogCard = ({ imgSrc, title, text, userName, userJob, userImg }) => {
         <img src={imgSrc} alt="blog-img" />
       </div>
       <div className="content">
-        <h1>{title}</h1>
-        <p>{text}</p>
+        <h1>{title.slice(0, 40) + "..."}</h1>
+        <p>{text.slice(0, 120) + "..."}</p>
       </div>
       <div className="user">
         <img src={userImg} alt="user" />

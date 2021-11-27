@@ -6,15 +6,15 @@
 
 .blogs .text h1 {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2.2rem;
   margin: 0;
 }
 
 .blogs .text p {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #b3b3b3;
-  margin: 0;
+  margin: 0.8rem 0;
 }
 
 .blogs .blog-container {
@@ -49,22 +49,27 @@
 
 .blogs .blog-card .content {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 .blogs .blog-card .content h1 {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.2rem;
 }
 
 .blogs .blog-card .content p {
   font-weight: 300;
-  font-size: 15px;
-  color: #9d9d9d;
+  font-size: 1rem;
+  color: teal;
 }
 
 .blogs .blog-card .user {
   display: flex;
   align-items: center;
+  padding-left: 1rem;
 }
 
 .blogs .blog-card .user img {
@@ -75,7 +80,7 @@
 }
 
 .blogs .blog-card .user .user-info h2 {
-  font-size: 9px;
+  font-size: 0.9rem;
   font-weight: 500;
   margin: 0 10px;
   text-align: left;
@@ -84,7 +89,7 @@
 .blogs .blog-card .user .user-info p {
   text-align: left;
   margin: 0 10px;
-  font-size: 9px;
+  font-size: 0.7rem;
   font-weight: 500;
   color: #8d8d8d;
 }

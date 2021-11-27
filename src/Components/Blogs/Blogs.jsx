@@ -51,7 +51,7 @@ const blogs2 = [
   {
     imgSrc:
       "https://cdn.discordapp.com/attachments/753151975570276352/866630945964949514/unknown.png",
-    title: "The thriving port town of Kochi",
+    title: "The thriving port town of Kochi, Already want to",
     text: "Once the main centre of India’s spice trade, is a unique amalgamation of the old and the new. Take a walk down the rambling alleys of Kochi’s historic Jewish Colony, lined with brightly-painted houses....",
     userImg:
       "https://cdn.discordapp.com/attachments/753151975570276352/866536124222537778/unknown.png",
@@ -61,7 +61,7 @@ const blogs2 = [
   {
     imgSrc:
       "https://cdn.discordapp.com/attachments/753151975570276352/866639868137308160/jaipur.jpg",
-    title: "Jaipur – Off the beaten trail in The ‘Pink’ City",
+    title: "Jaipur–Off the beaten trail in The ‘Pink’ City",
     text: "India’s official ‘pink city’, there’s much more to Rajasthan’s capital than its pink-red-tinged buildings and historic splendour. This majestic home to erstwhile royals ....",
     userImg:
       "https://cdn.discordapp.com/attachments/753151975570276352/866536124222537778/unknown.png",
